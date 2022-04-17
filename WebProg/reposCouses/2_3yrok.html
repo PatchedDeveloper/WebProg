@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+      <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+<a href="#" class="back_to_top"></a>
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Размер шрифта на CSS</h2></font>
+<font face="Tahoma" color="white">Давайте научимся менять размер шрифта. Для этого предназначено свойство <font  color="#DF9E62" ><i><b>font-size</b></i></font>, принимающее значение в пикселях.
+
+<p>Давайте зададим тексту абзаца шрифт в 30 пикселей:</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+  <li> абзац с текстом</li>
+<li>/p</li>
+<li>p {</li>
+  <li> font-size: 30px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<font  color="#DF9E62" >
+<p>
+ <font size="30px" > абзац с текстом</font>
+</p>
+</font>
+</font> 
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Тип шрифта на CSS</h2></font>
+<font face="Tahoma" color="white">Cвойство font-family позволяет задать семейство шрифта. Наиболее распространенные шрифты: Times New Roman (стоит по умолчанию), <font  color="#DF9E62" ><i><b>Arial, Georgia, Verdana, Trebuchet MS, Impact, Arial Black, Comic Sans MS, Courier New</b></i></font>.
+
+<p>Если шрифт состоит из нескольких слов, то имя такого шрифта следует брать в кавычки</p>
+
+<p>Поставим для всех абзацев шрифт <font  color="#DF9E62" ><i><b>Arial</b></i></font>:</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>абзац с текстом</li>
+<li>/p</li>
+<li>p {</li>
+   <li>font-family: Arial;</li>
+<li>}</li>
+</font> 
+</div>
+
+<p>Результат выполнения кода:</p>
+<font  color="#DF9E62" >
+<p>
+  <font face="Arial">абзац с текстом</font> 
+</p>
+</font> 
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Межстрочный интервал на CSS</h2></font>
+<font face="Tahoma" color="white">Давайте теперь научимся задавать межстрочный интервал тексту. Под межстрочным интервалом подразумевается расстояние между линиями текста, то есть белый промежуток между ними. Для этого предназначено свойство <font  color="#DF9E62" ><i><b>line-height</b></i></font>, задающее высоту линии текста.</p>
+
+<p>При использовании свойства <font  color="#DF9E62" ><i><b>line-height</b></i></font> вас может ожидать некоторый подвох: это свойство не задает промежуток между строками текста, как могло бы </p>показаться, а задает высоту линии текста.
+
+<p>Это значит, что реальный видимый промежуток между строками будет вычисляться так: <font  color="#DF9E62" ><i><b>line-height</b></i></font> - <font  color="#DF9E62" ><i><b>font-size</b></i></font> = видимое расстояние между строками текста.</p>
+
+<p>В следующем примере расстояние между строками текста будет <font  color="#DF9E62" ><i><b>50px - 20px = 30px</b></i></font>:</p>
+
+<div class="toolbar6" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>длинный текст...</li>
+<li>/p</li>
+<li>p {</li>
+   <li>font-size: 20px;</li>
+   <li>line-height: 50px;</li>
+   <li>text-align: justify;</li>
+   <li>width: 400px;</li>
+<li>}</li>
+</font> 
+</div>
+
+<p>Результат выполнения кода:</p>
+<font  color="#DF9E62" >
+<p>
+   <font size="20px" line-height="50px" text-align="justify" width="400px">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.</font>
+</p>
+</font> 
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение line-height без единиц</h2></font>
+<font face="Tahoma" color="white">Значением свойства <font  color="#DF9E62" ><i><b>line-height</b></i></font> не обязательно должно служить число в некоторых единицах. Можно также просто написать число или дробь. В этом случае настоящее значение <font  color="#DF9E62" ><i><b>line-height</b></i></font> можно будет найти, умножив его на значение <font  color="#DF9E62" ><i><b>font-size</b></i></font>.
+
+<p>К примеру, <font  color="#DF9E62" ><i><b>font-size</b></i></font> равен 10px, а <font  color="#DF9E62" ><i><b>line-height</b></i></font> - 1.5. В этом случае реальное значение <font  color="#DF9E62" ><i><b>line-height</b></i></font> будет 10px * 1.5 = 15px. Ну, а видимый белый промежуток между линиями текста будет <font  color="#DF9E62" ><i><b>5px: 15px - 10px = 5px</b></i></font>.</p>
+
+<p>Преимущество такого способа задания <font  color="#DF9E62" ><i><b>line-height</b></i></font> в том, что при изменении размера шрифта автоматически будет меняться и межстрочный интервал.</p>
+
+<p>Посмотрим применение описанного на примере:</p>
+
+<div class="toolbar6" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>длинный текст...</li>
+<li>/p</li>
+<li>p {</li>
+   <li>font-size: 20px;</li>
+   <li>line-height: 1.5;</li>
+   <li>text-align: justify;</li>
+   <li>width: 400px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<font  color="#DF9E62" >
+<p>
+   <font size="20px" line-height="1.5" text-align="justify" width="400px">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.</font>
+</p>
+</font>
+</font>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\2_2yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\2_4yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+
+</body>
+</div>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+       <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+  <a href="#" class="back_to_top"></a>
+ <div> 
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Основы работы с языком CSS</h2></font>
+<font face="Tahoma" color="white">Мы с вами уже разобрали основные теги языка HTML и теперь пришло время навести красоту. Хотелось бы иметь возможность менять цвет текста, его размер, фон и многое другое. Это делается с помощью языка CSS.
+
+<p>Как правило, CSS команды (стили) хранятся в отдельном файле, который подключается специальным тегом ко всем HTML страницам нашего сайта.</p>
+
+<p>Преимущество такого подхода в том, что CSS файл один, а HTML файлов может быть любое количество, хоть тысяча. Если мы сделаем изменение в одном месте CSS файла, например, покрасим все абзацы в красный цвет, то эти изменения применятся на всей тысяче HTML страниц, к которым подключен наш CSS файл. Очень удобно и быстро.</p>
+
+<p>Файл со стилями должен иметь расширение <font  color="#DF9E62" ><i><b>.css</b></i></font>. Чтобы подключить такой файл к HTML странице, в теге <font  color="#DF9E62" ><i><b>head</b></i></font> следует написать такую конструкцию:</p>
+
+<font  color="#DF9E62" ><i><b>link rel="stylesheet" href="имяФайла.css"</b></i></font>
+<p>В следующем примере к нашему HTML файлу подключается CSS файл <font  color="#DF9E62" ><i><b>styles.css</b></i></font>:</p>
+</div>
+
+<div class="toolbar" align="left"  >
+<font  color="#DF9E62" >
+<li>!DOCTYPE html</li>
+<li>html</li>
+    <li>head</li>
+       <li> meta charset="utf-8"</li>
+       <li> title Это заголовок тайтл /title </li>
+       <li> link rel="stylesheet" href="styles.css"</li>
+    <li>/head</li>
+   <li> body</li>
+        <li>p</li>
+          <li>  Это абзац с текстом.</li>
+        <li>/p</li>
+    <li>/body</li>
+<li>/html</li>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Как работать с CSS</h2></font>
+<font face="Tahoma" color="white">Каждому тегу в HTML соответствует так называемый селектор CSS. К примеру, тегу <font  color="#DF9E62" ><i><b>p</b></i></font> соответствует CSS селектор <font  color="#DF9E62" ><i><b>p</b></i></font>, с помощью которого мы можем обратиться ко всем абзацам HTML страницы и, например, покрасить их всех одновременно в красный цвет.
+
+<p>После селектора следует ставить фигурные скобки, внутри которых следует писать CSS свойства. Свойства и задают цвет, размер шрифта и другие интересные вещи. Их следует писать в таком формате: имя свойства, потом двоеточие, потом значение этого свойства (например, свойство - это цвет, а "красный" - это значение). Потом нужно поставить точку с запятой и можно писать следующее свойство.</p>
+
+<p>Давайте, например, покрасим все абзацы в красный цвет:</p>
+
+<div class="toolbar2" align="left" >
+<font  color="#DF9E62"  >
+<li> {</li>
+   <li> color: red;</li>
+<li>}</li>
+</font>
+</div>
+
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Другие значения для цвета</h2></font>
+<font face="Tahoma" color="white">Помимо ключевого слова <font  color="#DF9E62" ><i><b>red</b></i></font>, задающего красный, можно использовать и другие английские слова для цвета, например, <font  color="#DF9E62" ><i><b>green</b></i></font> - зеленый, <font  color="#DF9E62" ><i><b>blue</b></i></font> - голубой, <font  color="#DF9E62" ><i><b>yellow</b></i></font> - желтый, <font  color="#DF9E62" ><i><b>orange</b></i></font> - оранжевый, <font  color="#DF9E62" ><i><b>black</b></i></font> - черный, <font  color="#DF9E62" ><i><b>white</b></i></font> - белый.
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Способы задания цвета на CSS</h2></font>
+<font face="Tahoma" color="white">В предыдущем уроке вы увидели, как можно задать цвет ключевым словом. Ключевых слов, однако, немного, и с их помощью нельзя сделать все возможные оттенки всех цветов. Для этого существует еще два способа задания цветов. Через <font  color="#DF9E62" ><i><b>rgb</b></i></font>  и через решетку <font  color="#DF9E62" ><i><b>#</b></i></font> .</font>
+
+<p>Смотрите пример задания цвета через rgb:</p>
+
+<div class="toolbar2" align="left" >
+<font  color="#DF9E62"  >
+
+<li>p {</li>
+<li>color: rgb(255, 236, 114);</li>
+<li>}</li>
+
+</font>
+</div>
+</font>
+
+
+<p>Смотрите пример задания цвета через #:</p>
+
+<div class="toolbar2" align="left" >
+<font  color="#DF9E62"  >
+<li>p {</li>
+    <li>color: #ff0000;</li>
+<li>}</li>
+</font>
+</div>
+</font>
+
+<p>СДля того, чтобы получить нужный цвет, используются специальные программы. Вот пример онлайн генератора цвета: colorscheme.ru, а вот пример программы, позволяющей замерять цвет: colorcop.net.</p>
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Ширина и высота элементов на CSS</h2></font>
+<font face="Tahoma" color="white">Для задания ширины и высоты элементов в CSS предназначены свойства width и height. Значения этих свойств, как правило, задаются в пикселях. Пиксели обозначаются как px и добавляются к числу. Например, чтобы задать размер в 100 пикселей, значением свойства следует указать следующее: 100px.
+
+<p>Посмотрим на работу этих свойств на примере. Зададим ячейкам какой-нибудь таблицы ширину в 200px и высоту 100px:</p>
+
+<div class="toolbar4" align="left" >
+<font  color="#DF9E62"  >
+
+<li>table border="1"</li>
+    <li>tr</li>
+        <li>td 1 /td</li>
+        <li>td 2 /td</li>
+        <li>td 3 /td</li>
+    <li>/tr</li>
+    <li>tr</li>
+       <li> td 4 /td </li>
+       <li> td 5 /td </li>
+       <li> td 6 /td </li>
+    <li>/tr</li>
+   <li> tr </li>
+        <li>td 7 /td </li>
+        <li>td 8 /td </li>
+       <li> td 9 /td </li>
+    <li>/tr</li>
+<li>/table</li>
+<li> </li>
+<li>td {</li>
+   <li> width: 200px;</li>
+    <li>height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+</font>
+
+<p>Результат выполнения кода:</p>
+<font   color="#DF9E62">
+<table border="1" align="center" id="table1">
+    <tr id="table1">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr id="table1">
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr id="table1">
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+</table>
+
+</font>
+
+</font>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\2_2yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+</body>
+</div>
+</html>

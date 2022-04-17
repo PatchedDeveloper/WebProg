@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+  <a href="#" class="back_to_top"></a>
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Работа с изображениями на HTML</h2></font>
+<font face="Tahoma" color="white">Давайте теперь разберемся с тем, как разместить изображение на странице вашего сайта. Для этого предназначен тег
+ <img>, имеющий обязательный атрибут src, в котором следует задавать путь к файлу картинки. При этом сам тег не требует закрывающего тега.
+
+Давайте посмотрим на примере. Пусть в корневой папке нашего сайта находится файл smile.png с картинкой. Давайте выведем ее на странице нашего сайта:
+
+<font  color="#DF9E62" ><i><b> img src="..\путь\картинка.png" </b></i></font>
+<p>Результат выполнения кода:</p></font>
+<img src="..\assets\img\smile.png">
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Ширина картинки</h2></font>
+<font face="Tahoma" color="white">По умолчанию картинки отображаются своим реальным размером. Например, та картинка со смайлом, которую мы выводили выше, имеет реальный размер 130 на 130 пикселей и такой же размер картинки мы и видим в браузере.
+<p>При желании можно изменить размер картинки, задав ей ширину. Это делается с помощью атрибута width</p>
+
+<p>Давайте для примера зададим нашей картинке ширину 100 пикселей. Для этого значением атрибута width укажем число 100, вот так: width="100".</p>
+<p>Какого же размера будет картинка на экране? Можно подумать, что следующая: ширина 100 пикселей, как мы задали, и реальная высота 130, так как мы ее не задавали.На самом деле, это будет не так.</p>
+<p>Ширина действительно будет 100 пикселей, а вот высота подстроится так, чтобы пропорции картинки не исказились, то есть также станет 100 пикселей.</p>
+
+
+<font  color="#DF9E62" ><i><b> img src="smile.png" width="100" </b></i></font>
+
+<p>Результат выполнения кода:</p></font>
+<img src="..\assets\img\smile.png" width="100">
+.
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Высота картинки</h2></font>
+<font face="Tahoma" color="white">Можно вместо атрибута width написать атрибут height - в этом случае уже высота будет задана как 100 пикселей, а ширина подстроится под нее так, чтобы не исказить пропорции:
+
+<font  color="#DF9E62" ><i><b> img src="smile.png" height="100" </b></i></font>
+<p>Результат выполнения кода:</p></font>
+<img src="..\assets\img\smile.png" height="100">
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Одновременно ширина и высота</h2></font>
+<font face="Tahoma" color="white">Если задать одновременно и ширину, и высоту, то картинку можно исказить. Например, если задать ширину 100 пикселей, а высоту 70px, то наш смайл станет растянутым по ширине:
+
+<font  color="#DF9E62" ><i><b> img src="smile.png" width="100" height="70" </b></i></font>
+<p>Результат выполнения кода:</p>
+<img src="..\assets\img\smile.png" width="100" height="70">
+  <!--====== dev by https://github.com/kiddingtrust ======-->
+<p>Картинка не обязательно исказится, ведь мы можем просто задать и ширину, и высоту по 100 пикселей, в этом случае наша картинка станет меньше, чем была (а была она 130), но пропорции ее не исказятся:
+
+<font  color="#DF9E62" ><i><b> img src="smile.png" width="100" height="100" </b></i></font></p>
+<p>Результат выполнения кода:</p></font>
+<img src="..\assets\img\smile.png" width="100" height="100">
+
+
+</div>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\1_5yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\1_7yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ </html>

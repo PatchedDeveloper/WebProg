@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+    
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+ 
+<a href="#" class="back_to_top"></a>
+
+		<font face="Tahoma" color="white"><h2><font  color="#90209D" >Порядок flex блоков через CSS</h2></font>
+		<font face="Tahoma" color="white"><p>Пусть у нас даны следующие блоки, выстроенные в ряд:</p></font>
+
+<div class="toolbar5" align="left" >
+			<font  color="#DF9E62" >
+			<li>div class="parent"</li>
+			<li>div class="child">1 /div </li>
+			<li>div class="child">2 /div </li>
+			<li>div class="child">3 /div </li>
+			<li>div class="child">4 /div </li>
+			<li>div class="child">5 /div </li>
+			<li>/div</li>
+ </div>
+
+			<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar" align="left" >
+					<font  color="#DF9E62">
+					<li>.parent	{</li>
+					<li>display: flex;</li>
+					<li>flex-direction: row; </li>
+					<li>justify-content: center; </li>
+					<li>align-items:center;</li>
+					<li>width:300px;</li>
+					<li>height:200px;</li>
+					<li>border:1px solid red;</li>
+					<li>}</li>
+					<li>.child {</li>
+					<li>width: 50px;</li>
+					<li>height: 50px;</li>
+					<li>border: 1px solid green;</li>
+					<li>}</li>
+					</font>
+
+ </div>					
+					<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+
+
+			<div class="q13">
+				<div class="w1">1</div>
+				<div class="w1">2</div>
+				<div class="w1">3</div>
+				<div class="w1">4</div>
+				<div class="w1">5</div>
+			</div>
+
+			<font face="Tahoma" color="white"><p>Давайте поменяем порядок их отображения на экране, не меняя их порядок в HTML коде.Для этого существует свойство <font color="DF9E62"><i><b>order</b></i></font>, которое задает порядок следования конкретных элементов по следующему правилу: у кого больше значение, тот стоит ближе к концу оси, а у кого он меньше - тот стоит ближе к началу.Значением свойство может принимать положительное или отрицательное число. По умолчанию все элементы следуют друг за другом, это значит, что <font color="DF9E62"><i><b>order</b></i></font> у них нулевой.Давайте поменяем порядок наших элементов. Для этого установим второму элементу дополнительный класс <font color="DF9E62"><i><b>elem</b></i></font> и для этого класса установим свойство <font color="DF9E62"><i><b>order</b></i></font> в значение 1:</p></font>
+
+<div class="toolbar2" align="left" >
+			<font  color="#DF9E62" >
+			<li>.elem {</li>
+			<li>order: 1</li>
+			<li>border: 1px solid red;</li>
+			<li>}</li>
+</div>
+
+				<font face="Tahoma" color="white"><p>Так как все элементы по умолчанию будут иметь порядок 0, а наш второй элемент будет иметь порядок больше, чем остальные, то он будет располагаться позже их:</p></font>
+
+		<div class="q13">
+				<div class="w1">1</div>
+				<div class="w7">2</div>
+				<div class="w1">3</div>
+				<div class="w1">4</div>
+				<div class="w1">5</div>
+			</div>
+
+
+				<font face="Tahoma" color="white"><p>Давайте теперь зададим отрицательное значение -1:</p></font>
+
+<div class="toolbar2" align="left" >
+					<font  color="#DF9E62" >
+					<li>.elem {</li>
+					<li>order: -1</li>
+					<li>border: 1px solid red;</li>
+					<li>}</li>
+</div>
+
+				<font face="Tahoma" color="white"><p>В этом случае наш блок переместиться к началу оси:</p></font>
+
+			<div class="q13">
+				<div class="w1">1</div>
+				<div class="w8">2</div>
+				<div class="w1">3</div>
+				<div class="w1">4</div>
+				<div class="w1">5</div>
+			</div>
+ </div>
+ <div>
+    <ul id="navbar1">
+   <li><a href="..\Courses.html"><span><button class="btn first">Закончить модуль</button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ <html>

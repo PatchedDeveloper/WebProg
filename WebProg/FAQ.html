@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <link rel="shortcut icon" type="image/ico" href="assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== MAIN CONNECTION ======-->
+      <link href="corecff.css" >
+      <link href="assets\css_content\concss.css" rel="stylesheet">
+           <link rel="stylesheet" href="assets\css_content\telega-chat.css">
+     <!--====== сconnect js ======-->
+      <script src="assets\js\autosizewindow.js"></script>
+
+</head>
+
+<body background="assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="index.html" >
+     <img href="index.html" src="assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+
+    <div id="zag1" align="logo">
+      <font face="Tahoma" color="white"><h2>Ответы на часто задаваемые вопросы.</h2>
+<h3>1. Проверяются ли работы на правильность написания?</h3>
+<h4>- Если вы хотите,чтобы ваша работа была проверена можете оставить заявку  во вкладке "CONTACT"</h4>
+<h2>2. Какова цель данного проекта?</h2>
+<h4>- Помочь с обучением людям,которые хотят научиться, но не могут найти нужную им формацию в одном месте.</h4>
+<h2>3. Будут ли ещё проекты от вашей команды?</h2>
+<h4>- В планах есть, но качественный проект стоит много уделенного времени, следуя из этого точного ответа дать не можем.</h4>
+
+      </font>
+
+</div>
+
+
+
+
+<h1><span><button class="btn first">Связаться с нами Онлайн.</button></span></h1>
+
+
+    <script>
+        document.querySelector('h1').addEventListener('click',e=>{
+
+            console.log('триггер');
+
+            new TelegaChat().open()
+        })
+    </script>
+</div>
+
+ <script src="assets\js\jquery-2.2.4.min.js"></script>
+    <script src="assets\js\axios.min.js"></script>
+    <script src="assets\js\telega-chat.js"></script>
+ </body>
+</html>

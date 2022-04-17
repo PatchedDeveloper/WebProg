@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="index.html" >
+     <img href="index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+ <a href="#" class="back_to_top"></a>
+
+
+			<font face="Tahoma" color="white"><h2><font  color="#90209D" >Абсолютное позиционирование элементов на CSS</h2></font>
+			<font face="Tahoma" color="white"><p>В данном уроке мы с вами разберем абсолютное позиционирование элементов. Оно позволяет располагать элементы по указанным координатам страницы. Например, можно расположить элемент в позицию 100px сверху страницы и 200px слева. Элемент переместится туда, не взирая на то, что там будут располагаться другие элементы и просто станет поверх их. Говорят, что при этом элемент выпадает из нормального потока документа: все остальные элементы будут вести себя так, будто нашего элемента нет.Для того, чтобы сделать элемент абсолютно спозиционированным, этому элементу необходимо задать свойство position в значении <font color="DF9E62"><i><b>absolute</b></i></font>. Кроме этого свойства, нужны еще два: одно будет задавать координату по вертикали, а второе - по горизонтали.Для вертикали нужно задать отступ или сверху, или снизу. Отступ сверху задает свойство <font color="DF9E62"><i><b>top</b></i></font>, а отступ снизу - свойство <font color="DF9E62"><i><b>bottom</b></i></font>. Для горизонтали нужно задать отступ или слева, или справа. Отступ слева задает свойство <font color="DF9E62"><i><b>left</b></i></font>, а отступ справа - свойство <font color="DF9E62"><i><b>right</b></i></font>.Давайте посмотрим на примерах.</p></font>
+
+
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+				<font face="Tahoma" color="white"><p>Для начала давайте просто сделаем два блока без позиционирования <i>(обратите внимание на то, что элементы не прижаты к краю окна, так как body имеет margin по умолчанию)</i>:</p></font>
+
+<div class="toolbar2" align="left" >
+					<font  color="#DF9E62" >
+					<li>div id="elem1" /div</li>
+					<li>div id="elem2" /div</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar6" align="left" >
+				<font  color="#DF9E62">
+				<li>#elem1 {</li>
+				<li>width: 200px;</li>
+				<li>height: 200px; </li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>#elem2 {</li>
+				<li>width: 100px;</li>
+				<li>height: 100px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+
+
+					<div class="toolbar">
+						<iframe frameborder="0" srcdoc='
+
+						<!DOCTYPE html>
+						<html lang="ru">
+
+						<head>
+						<meta charset="utf-8">
+
+						<style>
+
+						#elem1 {
+						width: 200px;
+						height: 200px;
+						border: 1px solid red;
+						}
+						
+						#elem2 {
+						width: 100px;
+						height: 100px;
+						border: 1px solid green;
+						}
+
+						</style>
+
+						</head>
+
+						<body >
+
+						<div id="elem1"></div>
+						<div id="elem2"></div>
+
+						</body>
+						</html>
+
+						' ></iframe>
+					</div>
+
+
+			<div class="otstup">
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+				<font face="Tahoma" color="white"><p>Давайте теперь зеленому блоку зададим абсолютное позиционирование, поставив его в позицию сверху 150px и слева 100px:</p></font>
+			</div>
+
+<div class="toolbar2" align="left" >
+					<font  color="#DF9E62" >
+					<li>div id="elem1" /div</li>
+					<li>div id="elem2" /div</li>
+</div>	
+
+						<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar" align="left" >
+				<font  color="#DF9E62">
+				<li>#elem1 {</li>
+				<li>width: 200px;</li>
+				<li>height: 200px; </li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>#elem2 {</li>
+				<li>position: absolute;</li>
+				<li>top: 150px;</li>
+				<li>left: 100px;</li>
+				<li>width: 100px</li>
+				<li>height: 100px</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>	
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+ 
+					<div class="toolbar">
+						<iframe frameborder="0" srcdoc='
+
+						<!DOCTYPE html>
+						<html lang="ru">
+
+						<head>
+						<meta charset="utf-8">
+
+						<style>
+
+						#elem1 {
+						width: 200px;
+						height: 200px;
+						border: 1px solid red;
+						}
+						
+						#elem2 {
+						position: absolute;
+						top: 150px;
+						left: 100px;
+							
+						width: 100px;
+						height: 100px;
+						border: 1px solid green;
+						}
+
+						</style>
+
+						</head>
+
+						<body >
+
+						<div id="elem1"></div>
+						<div id="elem2"></div>
+
+						</body>
+						</html>
+
+						'></iframe>
+					</div>
+		
+
+				
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 3</h3></font>
+				<font face="Tahoma" color="white"><p>Давайте теперь поставим зеленый блок в позицию 0px снизу и 0px справа:<p></font>
+
+			
+<div class="toolbar2" align="left" >
+					<font  color="#DF9E62" >
+					<li>div id="elem1" /div</li>
+					<li>div id="elem2" /div</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>CSS:</p></font>
+ 
+<div class="toolbar" align="left" >
+				<font  color="#DF9E62">
+				<li>#elem1 {</li>
+				<li>width: 200px;</li>
+				<li>height: 200px; </li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>#elem2 {</li>
+				<li>position: absolute;</li>
+				<li>bottom: 0;</li>
+				<li>right: 0;</li>
+				<li>width: 100px</li>
+				<li>height: 100px</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+</div>
+ 
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+			</div>
+					<div class="toolbar">
+						<iframe frameborder="0" srcdoc='
+
+						<!DOCTYPE html>
+						<html lang="ru">
+
+						<head>
+						<meta charset="utf-8">
+
+						<style>
+
+						#elem1 {
+						width: 200px;
+						height: 200px;
+						border: 1px solid red;
+						}
+						
+						#elem2 {
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						
+						width: 100px;
+						height: 100px;
+						border: 1px solid green;
+						}
+
+						</style>
+
+						</head>
+
+						<body >
+
+						<div id="elem1"></div>
+						<div id="elem2"></div>
+
+						</body>
+						</html>
+
+						'></iframe>
+					</div>
+
+			<div class="otstup" >	
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 4</h3></font>
+				<font face="Tahoma" color="white"><p>Давайте теперь поставим зеленый блок в позицию 0px сверху и 0px слева:<p></font>
+			</div>
+			
+	<div class="toolbar2" align="left" >		
+					<font  color="#DF9E62" >
+					<li>div id="elem1" /div</li>
+					<li>div id="elem2" /div</li>
+</div>			
+
+						<font face="Tahoma" color="white"><p>CSS:</p></font>
+			
+<div class="toolbar" align="left" >
+				<font  color="#DF9E62">
+				<li>#elem1 {</li>
+				<li>width: 200px;</li>
+				<li>height: 200px; </li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>#elem2 {</li>
+				<li>position: absolute;</li>
+				<li>top: 0px</li>
+				<li>left: 0px;</li>
+				<li>width: 100px</li>
+				<li>height: 100px</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>	
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+
+			</div>
+					<div class="toolbar">
+						<iframe frameborder="0" srcdoc='
+
+						<!DOCTYPE html>
+						<html lang="ru">
+
+						<head>
+						<meta charset="utf-8">
+
+						<style>
+
+						#elem1 {
+						width: 200px;
+						height: 200px;
+						border: 1px solid red;
+						}
+						
+						#elem2 {
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						
+						width: 100px;
+						height: 100px;
+						border: 1px solid green;
+						}
+
+						</style>
+
+						</head>
+
+						<body >
+
+						<div id="elem1"></div>
+						<div id="elem2"></div>
+
+						</body>
+						</html>
+
+						'></iframe>
+					</div>		
+			
+ 
+ </div>
+
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\4_2yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ </html>

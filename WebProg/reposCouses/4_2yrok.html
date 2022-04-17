@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="index.html" >
+     <img href="index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+   <a href="#" class="back_to_top"></a>
+
+		<font face="Tahoma" color="white"><h2><font  color="#90209D" >Относительное позиционирование элементов на CSS</h2></font>
+		<font face="Tahoma" color="white"><p>Относительное позиционирование задается с помощью значения <font color="DF9E62"><i><b>relative</b></i></font> для свойства <font color="DF9E62"><i><b>position</b></i></font>. Такое позиционирование позволяет сдвигать элементы относительно своего текущего положения на заданную величину. При этом все остальные элементы страницы будут думать, что элемент стоит там, где и стоял изначально. То есть при таком типе позиционирования элемент не выпадает из нормального потока.Смещения от текущего положения задаются свойствами <font color="DF9E62"><i><b>top, right, bottom и left.</b></i></font></p></font>
+
+	
+		<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+		<font face="Tahoma" color="white"><p>Для начала давайте просто сделаем два блока без позиционирования:</p></font>
+	
+		
+<div class="toolbar2" align="left" >			
+				<font  color="#DF9E62" >
+				<li>div id="elem1" /div</li>
+				<li>div id="elem1" /div</li>
+				</div>
+				<font face="Tahoma" color="white"><p>CSS:</p></font>
+			
+			
+<div class="toolbar" align="left" >				
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+</div>						
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+							
+							#elem2 {
+							width: 200px;
+							height: 200px;
+							border: 1px solid red;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+						<font face="Tahoma" color="white"><p>Добавим теперь первому блоку <font color="DF9E62"><i><b>relative</b></i></font>. От этого пока ничего не поменяется, так как мы не указали смещение блока:</p></font>
+					</div>
+					
+<div class="toolbar2" align="left" >					
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem1" /div</li>
+	</div>						
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+						
+<div class="toolbar" align="left" >				
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>position: relative;</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+
+		</div>
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							position: relative;
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+							
+							#elem2 {
+							width: 200px;
+							height: 200px;
+							border: 1px solid red;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 3</h3></font>
+						<font face="Tahoma" color="white"><p>Давайте теперь отодвинем наш блок на 30px сверху, указав ему свойство <font color="DF9E62"><i><b>top</b></i></font>. При этом все остальные элементы будут вести себя так, будто наш блок остался том месте, где был изначально:</p></font>
+					</div>
+					
+		<div class="toolbar2" align="left" >				
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem1" /div</li>
+</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+<div class="toolbar" align="left" >							
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>position: relative;</li>
+						<li>top: 30px;</li>
+						<li>height: 100px;</li>
+						<li>width: 100px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							position: relative;
+							top: 30px;
+							
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+							
+							#elem2 {
+							width: 200px;
+							height: 200px;
+							border: 1px solid red;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 4</h3></font>
+						<font face="Tahoma" color="white"><p>Давайте также отодвинем наш блок на 40px слева, указав ему свойство <font color="DF9E62"><i><b>left</b></i></font>:</p></font>
+					</div>
+					<div class="toolbar2" align="left" >
+													<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem1" /div</li>
+							</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+						
+	<div class="toolbar" align="left" >					
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>position: relative;</li>
+						<li>top: 30px;</li>
+						<li>left: 40px;</li>
+						<li>height: 100px;</li>
+						<li>width: 100px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+							
+							#elem1 {
+							position: relative;
+							top: 30px;
+							left: 40px;
+							
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+							
+							#elem2 {
+							width: 200px;
+							height: 200px;
+							border: 1px solid red;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 5</h3></font>
+						<font face="Tahoma" color="white"><p>Отрицательные значения свойств <font color="DF9E62"><i><b>top, right, bottom и left</b></i></font> сдвигают в противоположном направлении. К примеру, положительное значение <font color="DF9E62"><i><b>top</b></i></font> сдвигает вниз, а отрицательное - вверх.Давайте отодвинем наш второй блок на 40px вверх, указав ему отрицательное значение свойства <font color="DF9E62"><i><b>top</b></i></font>:</p></font>
+					</div>
+					
+						<div class="toolbar2" align="left" >
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem1" /div</li>
+					</div>
+							
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+						
+					<div class="toolbar" align="left" >
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>height: 100px;</li>
+						<li>width: 100px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>position: relative;</li>
+						<li>top: -30px;</li>
+						<li>left: 20px;</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+							
+							#elem1 {
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+							
+							#elem2 {
+							position: relative;
+							top: -30px;
+							left: 20px;
+							
+							width: 200px;
+							height: 200px;
+							border: 1px solid red;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h2><font  color="#90209D" >Позиционирование относительно родителя на CSS</h2></font>
+						<font face="Tahoma" color="white"><p>Если элементу задан <font color="DF9E62"><i><b>relative</b></i></font>, а его потомку - <font color="DF9E62"><i><b>absolute</b></i></font>, то этот потомок будет позиционироваться относительно своего родителя, а не относительно окна браузера.Как правило, в таком случае родителю указывают <font color="DF9E62"><i><b>relative</b></i></font> без смещений. В этом случае с этим родителем ничего не происходит, но все его потомки теперь будут позиционироваться относительно него.Давайте посмотрим на примерах.</p></font>
+					</div>
+					
+					
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+						<font face="Tahoma" color="white"><p>Для начала давайте просто сделаем блок-родитель и блок-потомок без позиционирования:</p></font>
+					
+					
+					<div class="toolbar2" align="left" >
+							<font  color="#DF9E62" >
+							<li>div id="parent</li>
+							<li>div id="child" /div</li>
+							<li>/div</li>
+						</div>	
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+						
+				<div class="toolbar" align="left" >	
+						<font  color="#DF9E62" >
+						<li>#parent {</li>
+						<li>width: 500px;</li>
+						<li>height: 300px;</li>
+						<li>margin: 0 auto;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#child {</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+							
+							#parent {
+							width: 270px;
+							height: 290px;
+							margin: 0 auto;
+							border: 1px solid red;
+							}
+							
+							#child {
+							width: 200px;
+							height: 200px;
+							border: 1px solid green;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="parent">
+							<div id="child"></div>
+							</div>
+							
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+					<div class="otstup">
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+						<font face="Tahoma" color="white"><p>Давайте теперь абсолютно спозиционируем зеленый блок. Так как родителю не указан <font color="DF9E62"><i><b>relative</b></i></font>, то потомок будет позиционироваться относительно окна браузера:</p></font>
+					</div>
+					
+				<div class="toolbar2" align="left" >			
+							<font  color="#DF9E62" >
+							<li>div id="parent</li>
+							<li>div id="child" /div</li>
+							<li>/div</li>
+							</div>	
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+					
+						
+					<div class="toolbar" align="left" >	
+						<font  color="#DF9E62" >
+						<li>#parent {</li>
+						<li>width: 500px;</li>
+						<li>height: 300px;</li>
+						<li>margin: 0 auto;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#child {</li>
+						<li>position: absolute;</li>
+						<li>top: 20px;</li>
+						<li>left: 20px;</li>
+						<li>width: 200spx;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+							
+							#parent {
+							width: 300px;
+							height: 200px;
+							margin: 0 auto;
+							border: 1px solid red;
+							}
+								
+							#child {
+							position: absolute;
+							top: 20px;
+							left: 60px;
+							
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="parent">
+							<div id="child"></div>
+							</div>
+							
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+						<div>
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 3</h3></font>
+						<font face="Tahoma" color="white"><p>Укажем теперь родителю <font color="DF9E62"><i><b>relative</b></i></font>. В этом случае потомок будет позиционироваться относительно своего родителя:</p></font>
+					</div>
+					
+				<div class="toolbar2" align="left" >		
+							<font  color="#DF9E62" >
+							<li>div id="parent</li>
+							<li>div id="child" /div</li>
+							<li>/div</li>
+				</div>			
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+						
+			<div class="toolbar3" align="left" >		
+						<font  color="#DF9E62" >
+						<li>#parent {</li>
+						<li>position: relative;</li>
+						<li>width: 500px;</li>
+						<li>height: 300px;</li>
+						<li>margin: 0 auto;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#child {</li>
+						<li>position: absolute;</li>
+						<li>top: 20px;</li>
+						<li>left: 20px;</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+					</div>	
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+							
+							#parent {
+							position: relative;
+							width: 300px;
+							height: 200px;
+							margin: 0 auto;
+							border: 1px solid red;
+							}
+								
+							#child {
+							position: absolute;
+							top: 20px;
+							left: 20px;
+							
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="parent">
+							<div id="child"></div>
+							</div>
+							
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\4_1yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\4_3yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ </div>
+ <html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+<a href="#" class="back_to_top"></a>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Работа со ссылками на HTML</h2></font>
+<font face="Tahoma" color="white">Сейчас мы с вами будем разбираться со ссылками. Ссылки являются теми элементами, которые делают из интернета интернет. Нажимая на ссылки, мы можем переходить с одной страницы сайта на другую. Если бы их не было - интернет был бы просто набором страниц, никак не связанных друг с другом.
+
+<p>Ссылка создается с помощью тега <font  color="#DF9E62" ><i><b>a</b></i></font>. В этом теге обязательно должен быть атрибут <font  color="#DF9E62" ><i><b>herf</b></i></font>, в который следует записывать адрес той страницы, на которую ведет ссылка.</p>
+
+<p>Давайте для примера сделаем ссылку на гугл. Для этого нужно открыть этот сайт в браузере, скопировать адрес страницы из адресной строки и вставить в атрибут <font  color="#DF9E62" ><i><b>herf</b></i></font> ссылки:</p>
+
+<font  color="#DF9E62" ><i><b> a href="https://www.google.com">ссылка /a </b></i></font>
+<p>Результат выполнения кода:
+<a href="https://www.google.com">ссылка</a></p>
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Ссылки на страницы вашего сайта</h2></font>
+<font face="Tahoma" color="white">Выше мы делали ссылки на страницы чужих сайтов, копируя их адрес из адресной строки браузера. Пусть теперь вы хотите связать ссылками страницы своего сайта.
+
+<p>В таком случае копировать их адреса из адресной строки нельзя. Дело в том, что такие адреса будут содержать полный путь к вашей странице от корневого диска вашего компьютера, и при переносе в другую папку такие ссылки просто сломаются.</p>
+
+<p>Для страниц своего сайта следует практиковать другой подход. Изучим его на примере. Пусть в корневой папке вашего сайта расположен файл <font  color="#DF9E62" ><i><b>index.html</b></i></font> и файл  <font  color="#DF9E62" ><i><b>page.html</b></i></font>:</p>. Свяжем эти файлы ссылками. Для этого в атрибуте <font  color="#DF9E62" ><i><b>herf</b></i></font> ссылок следует просто написать имена этих файлов (с их расширением). Давайте сделаем это.</p>
+
+<p>На странице index.html сделаем ссылку на страницу <font  color="#DF9E62" ><i><b>page.html</b></i></font>:</p>
+
+<font face="Tahoma" color="white"><h1><font  color="#90209D" >страница index</h1></font>
+<a href="page.html">ссылка на page</a>
+<p>А на странице page.html сделаем ссылку на страницу <font  color="#DF9E62" ><i><b>index.html</b></i></font>:</p>
+
+<font face="Tahoma" color="white"><h1><font  color="#90209D" >страница page</h1></font>
+<a href="index.html">ссылка на index</a>
+
+
+</font>
+</div>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\1_4yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\1_6yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ </html>

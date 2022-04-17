@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+      <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+   <a href="#" class="back_to_top"></a>
+<font face="Tahoma" color="white"><h2><font  color="#90209D">Выравнивание текста на CSS</h2></font>
+<font face="Tahoma" color="white">Сейчас мы с вами научимся выравнивать текст. Для этого используется свойство <font  color="#DF9E62" ><i><b>text-align</b></i></font>. Текст можно выравнять по левому краю (значение <font  color="#DF9E62" ><i><b>left</b></i></font>), по правому (значение <font  color="#DF9E62" ><i><b>right</b></i></font>), по центру (значение <font  color="#DF9E62" ><i><b>center</b></i></font>) и одновременно и по правому, и по левому краю (значение <font  color="#DF9E62" ><i><b>justify</b></i></font>).
+
+<p>Давайте посмотрим на примерах.</p>
+
+<p>Значение <font  color="#DF9E62" ><i><b>right</b></i></font>
+Выровняем текст в абзацах по правому краю:</p>
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>p</li>
+ <li>  абзац с текстом</li>
+<li>/p</li>
+<li></li>
+<li>p {</li>
+  <li> text-align: right;</li>
+<li>}</li>
+</font>
+ </div>
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение center</h2></font>
+А теперь выровняем по центру:
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>p</li>
+ <li>  абзац с текстом</li>
+<li>/p</li>
+<li></li>
+<li>p {</li>
+  <li> text-align: center;</li>
+<li>}</li>
+</font>
+ </div>
+
+
+</font>
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение left</h2></font>
+<font face="Tahoma" color="white">А вот значение <font  color="#DF9E62" ><i><b>left</b></i></font> для абзацев можно и не ставить - они по умолчанию и так выровнены по левому краю. Однако есть элементы, которые по умолчанию стоят по центру (это, например, теги <font  color="#DF9E62" ><i><b>th</b></i></font>, которые делают ячейку-заголовок таблицы). И вот для них как раз-таки и может потребоваться выравнивание по левой стороне. Сделаем это:
+
+<div class="toolbar3" align="left" >
+<font  color="#DF9E62" >
+  <li>table border="1" width="300"  </li>
+    <li> tr </li>
+       <li> td Иван /td </li>
+       <li> td Иванов /td </li>
+       <li> td 200$ /td </li>
+    <li> /tr </li>
+   <li>  tr </li>
+       <li>  td Николай /td </li>
+       <li>  td Петров /td </li>
+       <li>  td 300$ /td </li>
+   <li> /tr </li>
+   <li> tr </li>
+      <li>   td Владимир /td </li>
+       <li>  td Сидоров /td </li>
+      <li>   td 400$ /td </li>
+   <li>  /tr </li>
+<li> /table </li>
+</font>
+ </div>
+
+<p>Результат выполнения кода:</p>
+
+<font  color="#DF9E62"  >
+<table border="1" align="center">
+   <tr>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Зарплата</th>
+   </tr>
+   <tr>
+      <td>Иван</td>
+      <td>Иванов</td>
+      <td>200$</td>
+   </tr>
+   <tr>
+      <td>Николай</td>
+      <td>Петров</td>
+      <td>300$</td>
+   </tr>
+</table>
+
+</font>
+
+
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение justify</h2></font>
+<font face="Tahoma" color="white">Ну, и наконец выровняем текст одновременно и по правому, и по левому краю. Этот эффект можно увидеть только при наличии достаточно длинного текста:
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>p</li>
+  <li> длинный текст...</li>
+<li>/p</li>
+<li>p {</li>
+  <li> text-align: justify;</li>
+   <li>width: 300px;</li>
+<li>}</li>
+
+</font>
+ </div>
+
+</font>
+
+<p>Результат выполнения кода:</p>
+<div class="toolbar" align="left" >
+<font  color="#DF9E62"  >
+<p >
+   Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+</font>
+ </div>
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Жирность текста на CSS</h2></font>
+<font face="Tahoma" color="white">А вот значение В данном уроке мы с вами изучим свойство <font  color="#DF9E62" ><i><b>font-weight</b></i></font>, которое позволяет сделать текст жирным или наоборот - отменить жирность (к примеру, для заголовков, которые жирные по умолчанию). Чтобы сделать текст жирным, следует указать значение <font  color="#DF9E62" ><i><b>bold</b></i></font>, а чтобы отменить жирность - значение <font  color="#DF9E62" ><i><b>normal</b></i></font>.
+
+<p>Это свойство работает аналогично тегу <font  color="#DF9E62" ><i><b>b</b></i></font>, который мы с вами уже разобрали. Разница в том, что через CSS управлять жирностью гораздо удобнее - я могу заставить все абзацы стать жирными, а все заголовки - нежирными, сделав всего пару записей в CSS файле.</p>
+
+<p>Если бы я делал жирный через тег <font  color="#DF9E62" ><i><b>b</b></i></font> - мне пришлось бы содержимое каждого абзаца обернуть в этот тег, а это было бы очень затратным по времени (а если я потом захочу убрать жирность абзацам - мне придется убирать все эти теги, представьте, сколько это лишней, бесполезной работы).</p>
+
+<p>В следующем примере мы сделаем все абзацы жирными, а все заголовки <font  color="#DF9E62" ><i><b>h2</b></i></font> - нежирными:</p>
+
+<div class="toolbar6" align="left" >
+<font  color="#DF9E62"  >
+ 
+<li>h2>Заголовок/h2</li>
+<li>p</li>
+   <li>абзац с текстом</li>
+<li>p</li>
+<li>h2 {</li>
+   <li>font-weight: normal;</li>
+<li>}</li>
+<li>p {</li>
+   <li>font-weight: bold;</li>
+<li>}</li>
+
+</font>
+ </div>
+
+<p>Результат выполнения кода:</p>
+
+<font  color="#DF9E62"  >
+<h2 >Заголовок</h2>
+<p >
+   <b>абзац с текстом</b>
+</p>
+</font>
+
+
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Курсив на CSS</h2></font>
+<font face="Tahoma" color="white">Свойство font-style позволяет сделать текст курсивным или наоборот - отменить курсив. Чтобы сделать текст курсивом, следует добавить значение italic, а чтобы отменить курсив - значение normal. Смотрите пример:
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>p</li>
+   <li>абзац с текстом</li>
+<li>/p</li>
+<li>p {</li>
+   <li>font-style: italic;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+
+<font  color="#DF9E62"  >
+<p>
+   <i>абзац с текстом</i>
+
+
+</font>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\2_1yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\2_3yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+
+
+</div>
+</body>
+</html>

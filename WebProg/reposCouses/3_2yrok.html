@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	   <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+<a href="#" class="back_to_top"></a>
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Основы работы с границами на CSS</h2></font>
+<font face="Tahoma" color="white">Сейчас мы с вами научимся добавлять границу элементам. Это делается при помощи трех свойств: свойство <font  color="#DF9E62" ><i><b> border-widt</b></i></font> задает толщину границы, <font  color="#DF9E62" ><i><b>border-color</b></i></font> - цвет, а <font  color="#DF9E62" ><i><b>border-style</b></i></font> задает тип границы.
+
+<p>Первые два свойства работают очевидным образом: <font  color="#DF9E62" ><i><b>border-color</b></i></font> принимает цвета в том же формате, что и свойство <font  color="#DF9E62" ><i><b>color</b></i></font>, а толщина границы задается в пикселях. А вот свойство <font  color="#DF9E62" ><i><b>border-style</b></i></font> принимает значения в виде ключевых слов. Например, значение <font  color="#DF9E62" ><i><b>solid</b></i></font> задает сплошную линию.</p>
+
+<p>Сделаем, к примеру, границу толщиной 3 пикселя, в виде сплошной линии, красного цвета:</p></font>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+   <li>border-width: 3px;    /* толщина 3px */</li>
+   <li>border-style: solid;  /* в виде линии */</li>
+   <li>border-color: red;    /* красный цвет */</li>
+  <li> width: 300px;</li>
+   <li>height: 100px;</li>
+<li>}</li>
+</font>
+   </div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_1"></div>
+
+
+<p>Давайте теперь посмотрим на примерах, какие еще есть типы границы.</p>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение solid</h2></font>
+<p>Значение solid - сплошная линия:</p>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+  <li> border-width: 1px;</li>
+   <li>border-style: solid;</li>
+  <li> border-color: black;</li>
+  <li> width: 300px;</li>
+  <li> height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_2"></div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение dotted</h2></font>
+<p>Значение dotted - линия в виде точек:</p>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+   <li>border-width: 1px;</li>
+  <li> border-style: dotted;</li>
+   <li>border-color: black;</li>
+  <li> width: 300px;</li>
+  <li> height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_3"></div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение dashed</h2></font>
+<p>Значение dashed - линия в виде тире:</p>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+   <li>border-width: 1px;</li>
+   <li>border-style: dashed;</li>
+   <li>border-color: black;</li>
+   <li>width: 300px;</li>
+   <li>height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_4"></div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение ridge</h2></font>
+<p>Значение ridge - выпуклая линия:</p>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+  <li> border-width: 3px;</li>
+  <li> border-style: ridge;</li>
+  <li> border-color: black;</li>
+  <li> width: 300px;</li>
+   <li>height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_5"></div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение double</h2></font>
+<p>Значение double - двойная линия:</p>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+<li>div id="elem" /div </li>
+</font>
+</div>
+
+<p>CSS</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62"  >
+<li>#elem {</li>
+  <li> border-width: 5px;</li>
+   <li>border-style: double;</li>
+   <li>border-color: black;</li>
+   <li>width: 300px;</li>
+   <li>height: 100px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<div id="course3_2_6"></div>
+
+
+
+
+
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\3_1yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\3_3yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+
+   </body>
+</div>
+</html>

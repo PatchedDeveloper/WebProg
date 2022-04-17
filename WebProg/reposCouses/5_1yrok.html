@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+
+<a href="#" class="back_to_top"></a>
+
+
+		<font face="Tahoma" color="white"><h2><font  color="#90209D" >Размещение флекс элементов в ряд или колонку</h2></font>
+		<font face="Tahoma" color="white"><p>Сейчас мы с вами начнем изучать продвинутые вещи для работы с флекс элементами. Для начала давайте рассмотрим специальное свойство <font color="DF9E62"><i><b>flex-direction</b></i></font>, которое регулирует то, как выстраиваются наши блоки. По умолчанию оно имеет значение <font color="DF9E62"><i><b>row</b></i></font>, поэтому элементы выстраиваются в ряд. Давайте посмотрим, какие еще есть значения у этого свойства.</p></font>
+		<font face="Tahoma" color="white"><h3><font  color="#90209D" >Значение row-reverse</h3></font>
+		<font face="Tahoma" color="white"><p>Значение <font color="DF9E62"><i><b>row-reverse</b></i></font> также позволяет выстраивать блоки в ряд, прижимая их к правому краю. При этом происходит переворот порядка - первый блок будет самым правым:</p></font>
+
+
+<div class="toolbar5" align="left" >
+			<font  color="#DF9E62" >
+			<li>div class="parent"</li>
+			<li>div class="child">1 /div </li>
+			<li>div class="child">2 /div </li>
+			<li>div class="child">3 /div </li>
+			<li>/div</li>
+</div>
+
+			<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar" align="left" >
+				<font  color="#DF9E62">
+				<li>.parent	{</li>
+				<li>display: flex;</li>
+				<li>flex-direction: row-reverse;</li>
+				<li>width: 300px;</li>
+				<li>height: 200px;</li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>.child {</li>
+				<li>width: 50px;</li>
+				<li>height: 50px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+
+
+		
+				<div class="q1">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+			
+
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Значение column</h3></font>
+				<font face="Tahoma" color="white"><p>Значение <font color="DF9E62"><i><b>column</b></i></font> выстраивает элементы в колонку:</p></font>
+			
+<div class="toolbar5" align="left" >			
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+</div>
+
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+				
+
+<div class="toolbar" align="left" >			
+				<font  color="#DF9E62">
+				<li>.parent	{</li>
+				<li>display: flex;</li>
+				<li>flex-direction: column;</li>
+				<li>width: 300px;</li>
+				<li>height: 200px;</li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>.child {</li>
+				<li>width: 50px;</li>
+				<li>height: 50px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+			
+
+
+				<div class="q2">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+			
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Значение column-reverse</h3></font>
+				<font face="Tahoma" color="white"><p>Зададим теперь значение <font color="DF9E62"><i><b>column-reverse</b></i></font>. В этом случае колонка будет перевернутой - элементы будут прижаты к низу, при этом первый элемент будет самым нижним:ачение column выстраивает элементы в колонку:</p></font>
+			
+<div class="toolbar5" align="left" >				
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+</div>
+					
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+			
+<div class="toolbar" align="left" >			
+				<font  color="#DF9E62">
+				<li>.parent	{</li>
+				<li>display: flex;</li>
+				<li>flex-direction: column-reverse;</li>
+				<li>width: 300px;</li>
+				<li>height: 200px;</li>
+				<li>border: 1px solid red;</li>
+				<li>}</li>
+				<li>.child {</li>
+				<li>width: 50px;</li>
+				<li>height: 50px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+		
+				<div class="q3">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+ </div>
+
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\5_2yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ <html>

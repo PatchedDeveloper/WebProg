@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+		<a href="#" class="back_to_top"></a>
+			<font face="Tahoma" color="white"><h2><font  color="#90209D" >Позиционирование относительно абсолютного родителя на CSS</h2></font>
+			<font face="Tahoma" color="white"><p>В предыдущем уроке мы с вами разобрали, что, если родителю задать <font color="DF9E62"><i><b>relative</b></i></font>, то его потомки будут абсолютно позиционироваться относительно него. Так чаще всего поступают, когда не хотят, чтобы родительский элемент выпал из нормального потока.</p>
+			<p>Может быть и такое, что у родителя задан <font color="DF9E62"><i><b>absolute</b></i></font>. В этом случае потомки с <font color="DF9E62"><i><b>absolute</b></i></font> также будут позиционироваться относительно такого родителя, а не относительно окна браузера:</p></font>
+		
+		
+					<div class="toolbar2" align="left" >		
+							<font  color="#DF9E62" >
+							<li>div id="parent</li>
+							<li>div id="child" /div</li>
+							<li>/div</li>
+</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+					
+			
+	<div class="toolbar3" align="left" >			
+						<font  color="#DF9E62" >
+						<li>#parent {</li>
+						<li>position: absolute;</li>
+						<li>top: 100px;</li>
+						<li>left: 200px;</li>
+						<li>width: 500px;</li>
+						<li>height: 300px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#child {</li>
+						<li>width: 200px;</li>
+						<li>height: 200px;</li>
+						<li>border: 1px solid green;</li>
+						<li>position: absolute;</li>
+						<li>top: 0;</li>
+						<li>left: 0;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					</div>	
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#parent {
+							position: absolute;
+							top: 50px;
+							left: 100px;
+							
+							width: 250px;
+							height: 150px;
+							border: 1px solid red;
+							}
+							
+							#child {
+							position: absolute;
+							top: 0;
+							left: 0;
+							
+							width: 100px;
+							height: 100px;
+							border: 1px solid green;
+							}
+
+							</style>
+
+							</head>
+
+							<body >
+
+							<div id="parent">
+							<div id="child"></div>
+							</div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+			
+				<font face="Tahoma" color="white"><h2><font  color="#90209D" >Абсолютное позиционирование без координат</h2></font>
+				<font face="Tahoma" color="white"><p>На самом деле указания координат при абсолютном позиционировании не обязательно. Если элементу просто написать <font color="DF9E62"><i><b>position</b></i></font> в значении <font color="DF9E62"><i><b>absolute</b></i></font>, то он станет абсолютно спозиционированным, но останется стоять в том же месте, где и стоял. При этом все остальные элементы будут вести себя так, будто нашего элемента нет и могут налезть на него.Давайте посмотрим на примерах.</p></font>
+			
+		
+			
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+				<font face="Tahoma" color="white"><p>Для начала давайте просто сделаем три блока без позиционирования и между ними некоторый текст:</p></font>
+			
+				<div class="toolbar2" align="left" >	
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem2" /div</li>
+							<li>text text text text text text </li>
+							<li>div id="elem3" /div</li>
+
+</div>
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+			
+			<div class="toolbar3" align="left" >			
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>width: 200px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>margin-left: 10px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem3 {</li>
+						<li>width: 50px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid blue;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							width: 200px;
+							height: 130px;
+							border: 1px solid red;
+							}
+							
+							#elem2 {
+							width: 100px;
+							height: 80px;
+							margin-left: 10px;
+							border: 1px solid green;
+							}
+							
+							#elem3 {
+							width: 50px;
+							height: 115px;
+							border: 1px solid blue;
+							}
+							
+							
+
+							</style>
+
+							</head>
+
+							<body >
+							
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							<p style="color:white">text text text text text text</p>
+							<div id="elem3"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+			<div class="otstupp">
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+				<font face="Tahoma" color="white"><p>А теперь давайте добавим зеленому блоку <font color="DF9E62"><i><b>absolute</b></i></font>. В результате этот блок останется на месте, а все элементы снизу будут вести себя так, будто нашего элемента нет и налезут на него:</p></font>
+			</div>
+			
+				<div class="toolbar2" align="left" >		
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem2" /div</li>
+							<li>text text text text text text </li>
+							<li>div id="elem3" /div</li>
+</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+
+			
+			<div class="toolbar3" align="left" >		
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>width: 200px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>position: absolute;</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>margin-left: 10px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem3 {</li>
+						<li>width: 50px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid blue;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							width: 200px;
+							height: 150px;
+							border: 1px solid red;
+							}
+							
+							#elem2 {
+							position: absolute;
+							width: 100px;
+							height: 100px;
+							margin-left: 10px;
+							border: 1px solid green;
+							}
+							
+							#elem3 {
+							width: 50px;
+							height: 150px;
+							border: 1px solid blue;
+							}
+							
+							
+
+							</style>
+
+							</head>
+
+							<body >
+							
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							<p style="color:white">text text text text text text</p>
+							<div id="elem3"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+			<div class="otstupp">
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 3</h3></font>
+				<font face="Tahoma" color="white"><p>А теперь давайте добавим свойство <font color="DF9E62"><i><b>left</b></i></font>, не добавляя позицию по вертикали. В результате по горизонтали наш блок станет на указанное значение, а по вертикали - останется стоять там, где и стоял:</p></font>
+			</div>
+			
+			<div class="toolbar2" align="left" >			
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem2" /div</li>
+							<li>text text text text text text </li>
+							<li>div id="elem3" /div</li>
+</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+					
+			
+		<div class="toolbar3" align="left" >			
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>width: 200px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>position: absolute;</li>
+						<li>left: 40px;</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>margin-left: 10px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem3 {</li>
+						<li>width: 50px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid blue;</li>
+						<li>}</li>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							width: 200px;
+							height: 150px;
+							border: 1px solid red;
+							}
+							
+							#elem2 {
+							position: absolute;
+							left: 40px;
+							
+							width: 100px;
+							height: 100px;
+							margin-left: 10px;
+							border: 1px solid green;
+							}
+							
+							#elem3 {
+							width: 50px;
+							height: 150px;
+							border: 1px solid blue;
+							}
+							
+							
+
+							</style>
+
+							</head>
+
+							<body >
+							
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							<p style="color:white">text text text text text text</p>
+							<div id="elem3"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+			<div class="otstupp">
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 4</h3></font>
+				<font face="Tahoma" color="white"><p>Теперь давайте, наоборот, добавим свойство <font color="DF9E62"><i><b>top</b></i></font>, не добавляя позицию по горизонтали. В результате по вертикали наш блок станет на указанное значение, а по горизонтали - останется стоять там, где и стоял:</p></font>
+			</div>
+			
+				<div class="toolbar2" align="left" >		
+							<font  color="#DF9E62" >
+							<li>div id="elem1" /div</li>
+							<li>div id="elem2" /div</li>
+							<li>text text text text text text </li>
+							<li>div id="elem3" /div</li>
+</div>
+
+							<font face="Tahoma" color="white"><p>CSS:</p></font>
+						
+			
+				<div class="toolbar3" align="left" >
+						<font  color="#DF9E62" >
+						<li>#elem1 {</li>
+						<li>width: 200px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid red;</li>
+						<li>}</li>
+						<li>#elem2 {</li>
+						<li>position: absolute;</li>
+						<li>top: 100px;;</li>
+						<li>width: 100px;</li>
+						<li>height: 100px;</li>
+						<li>margin-left: 10px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						<li>#elem3 {</li>
+						<li>width: 50px;</li>
+						<li>height: 150px;</li>
+						<li>border: 1px solid blue;</li>
+						<li>}</li>
+</div>
+
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+					
+						<div class="toolbar">
+							<iframe frameborder="0" srcdoc='
+
+							<!DOCTYPE html>
+							<html lang="ru">
+
+							<head>
+							<meta charset="utf-8">
+
+							<style>
+
+							#elem1 {
+							width: 200px;
+							height: 150px;
+							border: 1px solid red;
+							}
+							
+							#elem2 {
+							position: absolute;
+							top: 100px; /* добавляем позицию по вертикали */
+							
+							width: 100px;
+							height: 100px;
+							margin-left: 10px;
+							border: 1px solid green;
+							}
+							
+							#elem3 {
+							width: 50px;
+							height: 150px;
+							border: 1px solid blue;
+							}
+							
+							
+
+							</style>
+
+							</head>
+
+							<body >
+							
+
+							<div id="elem1"></div>
+							<div id="elem2"></div>
+							<p style="color:white">text text text text text text</p>
+							<div id="elem3"></div>
+
+							</body>
+							</html>
+
+							'></iframe>
+						</div>
+						
+				<div>
+    <ul id="navbar3">
+   <li><a href="..\reposCouses\4_2yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\4_4yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>		
+ </body>
+ </div>
+ <html>

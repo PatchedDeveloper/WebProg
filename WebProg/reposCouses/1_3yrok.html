@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+    <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html"" >
+     <img href="..\index.html"" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+<a href="#" class="back_to_top"></a>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Работа с основными HTML тегами</h2></font>
+<font face="Tahoma" color="white">Давайте теперь изучим основные теги, которые используются на странице. В примерах далее я для простоты не буду приводить структуру всей страницы, считайте, что мы всегда работаем внутри тега body, если не указано иное.</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Абзацы</h2></font>
+<font face="Tahoma" color="white">Одним из основных элементов страницы являются абзацы. Их можно сравнить с абзацами в книге - каждый абзац начинается с новой строки и имеет так называемую красную строку (это когда первая строка текста абзаца немного отступает вправо). По умолчанию красной строки нет, но ее легко сделать (об этом чуть позже).
+
+Абзац создается с помощью тега <font  color="#DF9E62" ><i><b>p</b></i></font> таким образом:</font>
+<div class="toolbar2" align="left" >
+    <font  color="#DF9E62" >
+<li> p Это абзац. /p</li>
+<li> p Это еще один абзац. /p</li>
+<li> p И еще один абзац. /p</li>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Заголовки страницы</h2></font>
+<font face="Tahoma" color="white">Кроме абзацев важное значение на странице имеют заголовки. Их также можно сравнить с заголовками из книги - каждая глава имеет свой заголовок (название этой главы) и разбита на параграфы, которые тоже имеют свои заголовки. Ну, а основной текст страницы располагается в абзацах.
+
+Заголовки создаются с помощью тегов <font  color="#DF9E62" ><i><b>h1, h2, h3, h4, h5, h6</b></i></font>. Они имеют разную степень важности. В заголовке <font  color="#DF9E62" ><i><b>h1</b></i></font>. следует располагать название всей HTML страницы, в <font  color="#DF9E62" ><i><b>h2</b></i></font>. - название блоков страницы, в <font  color="#DF9E62" ><i><b>h3</b></i></font>. - название подблоков и так далее.
+
+<font face="Tahoma" color="white">Все заголовки по умолчанию жирные и имеют разный размер (это можно поменять через CSS, но об этом позже). Для примера сделаем заголовки всех уровней:</font>
+
+    <font  color="#DF9E62"  >
+    
+<li>h1 Заголовок h1 /h1</li>
+<li>h2 Заголовок h2 /h2</li>
+<li>h3 Заголовок h3 /h3</li>
+<li>h4 Заголовок h4 /h4</li>
+<li>h5 Заголовок h5 /h5</li>
+<li>h6 Заголовок h6 /h6</li>
+
+</font>
+
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Жирный</h2></font>
+<font face="Tahoma" color="white">Вы уже знаете, что заголовки по умолчанию жирные. Однако, можно сделать жирным и обычный текст - достаточно взять его в тег <font  color="#DF9E62" ><i><b>b</b></i></font>. Смотрите пример:</font>
+
+<p>
+    <i>Это обычный текст, а это </i>b<b> жирный </b>/b <i>текст</i>.
+</p>
+
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Курсив</h2></font>
+
+<font face="Tahoma" color="white">Кроме жирного можно сделать также и курсив с помощью тега <font  color="#DF9E62" ><i><b>i</b></i></font>:</font>
+
+<p>
+    Это обычный текст, а это <i>i курсивный /i </i>текст.
+</p>
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Замечания</h2></font>
+
+<font face="Tahoma" color="white">Oбратите внимание на то, что теги <font  color="#DF9E62" ><i><b>b</b></i></font> и <font  color="#DF9E62" ><i><b>i</b></i></font> следует использовать внутри какого-либо другого тега, например абзаца. В этом случае абзацы создают общую структуру страницы (абзацы и заголовки), а указанные теги делают жирным или курсивом отдельные кусочки текста.</font>
+</div>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\1_2yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\1_4yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ </html>

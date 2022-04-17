@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.htmll" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+  
+
+<a href="#" class="back_to_top"></a>
+		<font face="Tahoma" color="white"><h2><font  color="#90209D" >Главная и поперечная оси в флекс блоках</h2></font>
+		<font face="Tahoma" color="white"><p>Про флексбоксы можно говорить в двух терминах: первое это - ряд или колонка, второе - в терминах осей. С рядами и колонками мы уже разобрались, давайте теперь разберемся с осями. Понимание осей нужно для того, чтобы выравнивать элементы по горизонтали или по вертикали.
+			<p>При работе с флекс элементами всегда существует главная ось и поперечная. Мы можем элементы выравнивать по главной оси и поперек главной оси. Главная ось может иметь 4 направления: слева направо, справа налево, сверху вниз и снизу вверх.</p>
+			
+			<p>Направление поперечной оси зависит от направления главной: если главная ось горизонтальна, то поперечная направлена сверху вниз, если главная ось вертикальна, то поперечная направлена слева направо. Других направлений поперечная ось иметь не может.</p>
+		<p>Направление главной оси регулируется свойством <font color="DF9E62"><i><b>flex-direction</b></i></font>. Если данное свойство имеет значение <font color="DF9E62"><i><b>row</b></i></font> - главная ось направлена слева направо, если же значение <font color="DF9E62"><i><b>row-reverse</b></i></font>, то справа налево. Значение column направляет ось сверху вниз, а значение <font color="DF9E62"><i><b>column-reverse</b></i></font> - снизу вверх.</p></font>
+
+			<font face="Tahoma" color="white"><h2><font  color="#90209D" >Выравнивание флекс элементов по главной оси</h2></font>
+			<font face="Tahoma" color="white"><p>Свойство <font color="DF9E62"><i><b>justify-content</b></i></font>. позволяет выравнивать элементы по главной оси. Ранее вы уже проходили значения <font color="DF9E62"><i><b>center, space-between, space-around, space-evenly.</b></i></font>. Давайте теперь изучим еще несколько значений.Значение <font color="DF9E62"><i><b>flex-start</b></i></font>. прижимает элементы к началу главной оси, а значение <font color="DF9E62"><i><b>flex-end</b></i></font>. - к концу. Давайте посмотрим на примерах.</p></font>
+	
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+				<font face="Tahoma" color="white"><p>Направим главную ось слева направо, задав свойству <font color="DF9E62"><i><b>flex-direction</b></i></font> значение <font color="DF9E62"><i><b>row</b></i></font>. Прижмем блоки к началу оси. Для этого <font color="DF9E62"><i><b>justify-content</b></i></font> установим в значение <font color="DF9E62"><i><b>flex-start:</b></i></font></p></font>
+
+<div class="toolbar5" align="left" >
+			<font  color="#DF9E62" >
+			<li>div class="parent"</li>
+			<li>div class="child">1 /div </li>
+			<li>div class="child">2 /div </li>
+			<li>div class="child">3 /div </li>
+			<li>/div</li>
+ </div>
+
+			<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar" align="left" >
+				<font  color="#DF9E62">
+				<li>.parent	{</li>
+				<li>display: flex;</li>
+				<li>flex-direction: row; /* главная ось слева направо */</li>
+				<li>justify-content: flex-start; /* блоки к началу главной оси */ </li>
+				<li>}</li>
+				<li>.child {</li>
+				<li>width: 50px;</li>
+				<li>height: 50px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+ </div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+		
+
+				<div class="q4">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+			
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+				<font face="Tahoma" color="white"><p>В предыдущих примерах главная ось была направлена горизонтально. Давайте теперь перевернем ее и направим вертикально.Давайте направим главную ось вниз, задав свойству <font color="DF9E62"><i><b>flex-direction</b></i></font> значение <font color="DF9E62"><i><b>column</b></i></font>Прижмем блоки к началу главной оси, то есть к верхнему краю. Для этого <font color="DF9E62"><i><b>justify-content</b></i></font> установим в значение <font color="DF9E62"><i><b>flex-start:</b></i></font></p></font>
+			
+<div class="toolbar5" align="left" >
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+
+</div>					
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+				
+<div class="toolbar" align="left" >
+							<font  color="#DF9E62">
+							<li>.parent	{</li>
+							<li>display: flex;</li>
+							<li>flex-direction: column; /* главная ось слева направо */</li>
+							<li>justify-content: flex-start; /* блоки к началу главной оси */ </li>
+							<li>}</li>
+							<li>.child {</li>
+							<li>width: 50px;</li>
+							<li>height: 50px;</li>
+							<li>border: 1px solid green;</li>
+							<li>}</li>
+							</font>
+</div>
+
+							<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+						
+
+				<div class="q5">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+			
+				<font face="Tahoma" color="white"><h2><font  color="#90209D" >Выравнивание флекс блоков по поперечной оси CSS</h2></font>
+				<font face="Tahoma" color="white"><p>Давайте теперь будем выравнивать блоки и по поперечной оси. Выравнивание по этой оси задается свойством <font color="DF9E62"><i><b>align-items.</b></i></font>Значение <font color="DF9E62"><i><b>flex-start</b></i></font>  прижимает элементы к началу оси, а значение <font color="DF9E62"><i><b>flex-end</b></i></font>- к концу.Давайте попробуем на примерах.</p></font>
+			
+					
+						<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 1</h3></font>
+						<font face="Tahoma" color="white"><p>Направим главную ось слева направо. В этом случае поперечная ось будет направлена сверху вниз. Давайте порегулируем расположение наших блоков и по главной оси, и по перечной оси.По главной оси прижмем блоки к ее началу, то есть к левому краю. Для этого justify-content установим в значение <font color="DF9E62"><i><b>flex-start</b></i></font> По поперечной оси также прижмем блоки к ее началу, то есть к верхнему краю. Для этого <font color="DF9E62"><i><b>align-items</b></i></font> также установим в значение <font color="DF9E62"><i><b>flex-start</b></i></font>.Посмотрим, что у нас получается:</p></font>
+
+					
+<div class="toolbar5" align="left" >		
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+</div>
+
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+		
+<div class="toolbar" align="left" >				
+						<font  color="#DF9E62">
+						<li>.parent	{</li>
+						<li>display: flex;</li>
+						<li>	flex-direction:  row; /* главная ось направо, поперечная вниз */ </li>
+						<li>justify-content: flex-start; /* блоки к началу главной оси */ </li>
+						<li>align-items:     flex-start; /* блоки к началу поперечной оси */  </li>
+						<li>}</li>
+						<li>.child {</li>
+						<li>width: 50px;</li>
+						<li>height: 50px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						</font>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+				
+
+				<div class="q6">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>	
+			
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 2</h3></font>
+				<font face="Tahoma" color="white"><p>Направим теперь главную ось сверху вниз. Так как главная ось вертикальна, то поперечная будет направлена справа налево. Давайте прижмем блоки по обеим осям к их началу:</p></font>
+			
+<div class="toolbar5" align="left" >			
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+</div>
+
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+			
+<div class="toolbar" align="left" >					
+						<font  color="#DF9E62">
+						<li>.parent	{</li>
+						<li>display: flex;</li>
+						<li>flex-direction: column; /* главная ось вниз, поперечная вправо */ </li>
+						<li>justify-content: flex-start; /* блоки к началу главной оси */ </li>
+						<li>align-items: flex-start; /* блоки к началу поперечной оси */  </li>
+						<li>}</li>
+						<li>.child {</li>
+						<li>width: 50px;</li>
+						<li>height: 50px;</li>
+						<li>border: 1px solid green;</li>
+						<li>}</li>
+						</font>
+</div>
+
+						<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+					
+
+				<div class="q7">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+		
+
+				<font face="Tahoma" color="white"><h3><font  color="#90209D" >Пример 3</h3></font>
+				<font face="Tahoma" color="white"><p>Прижмем блоки к концу обеих осей:</p></font>
+			
+<div class="toolbar5" align="left" >
+					<font  color="#DF9E62" >
+					<li>div class="parent"</li>
+					<li>div class="child">1 /div </li>
+					<li>div class="child">2 /div </li>
+					<li>div class="child">3 /div </li>
+					<li>/div</li>
+</div>
+
+					<font face="Tahoma" color="white"><p>CSS:</p></font>
+			
+<div class="toolbar3" align="left" >
+				<font  color="#DF9E62">
+				<li>.parent	{</li>
+				<li>display: flex;</li>
+				<li>justify-content: flex-start; /* блоки к началу главной оси */ </li>
+				<li>flex-direction: column; /* главная ось вниз, поперечная вправо */ </li>						
+				<li>align-items:flex-end; /* блоки к концу поперечной оси */  </li>
+				<li>justify-content:flex-end; /* блоки к концу главной оси */  </li>
+				<li>}</li>
+				<li>.child {</li>
+				<li>width: 50px;</li>
+				<li>height: 50px;</li>
+				<li>border: 1px solid green;</li>
+				<li>}</li>
+				</font>
+</div>
+
+				<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+		
+
+			<div class="q8">
+					<div class="w1">1</div>
+					<div class="w1">2</div>
+					<div class="w1">3</div>
+				</div>
+
+
+
+
+
+
+
+</div>
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\5_1yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\5_3yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+ </body>
+ <html>

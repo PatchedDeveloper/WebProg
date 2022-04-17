@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+      <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="..\index.html" >
+     <img href="..\index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+
+<a href="#" class="back_to_top"></a>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Свойство-сокращение font</h2></font>
+<font face="Tahoma" color="white">В предыдущем уроке мы с вами разобрали много свойств для текста. Зачастую достаточно накладно отдельно прописывать каждое из этих свойств, поэтому в CSS для большего удоства существует специальное свойство-сокращение <font  color="#DF9E62" ><i><b>font</b></i></font>. Данное свойство позволяет одновременно задать размер шрифта, семейство, жирность, курсив и межстрочный интервал.
+
+<p>Описываемое свойство имеет следующий синтаксис:</p>
+
+<p>курсив жирность размер_шрифта / межстрочный_интервал семейство</p>
+
+<p>При этом порядок свойств имеет значение, и обязательными являются <font  color="#DF9E62" ><i><b>"размер_шрифта" и "семейство"</b></i></font>. Обратите внимание на то, что другие свойства, кроме описанных выше в синтаксисе, не входят в данное свойство сокращение.</p>
+Давайте посмотрим на примере.
+
+<p>Пусть у нас есть следующие стили:</p>
+
+<div class="toolbar6" align="left" >
+<font  color="#DF9E62" >
+<li>p {</li>
+   <li>font-size: 16px;v
+   <li>font-family: Arial;</li>
+   <li>font-weight: bold;</li>
+   <li>line-height: 50px;</li>
+   <li>font-style: italic;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Давайте перепишем их через свойство-сокращение:</p>
+
+<div class="toolbar2" align="left" >
+<font  color="#DF9E62" >
+<li>p {</li>
+   <li>font: bold italic 16px/50px Arial;</li>
+<li>}</li>
+</font>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Красная строка текста на CSS</h2></font>
+<font face="Tahoma" color="white">Давайте теперь разберемся, как сделать красную строку, то есть отступ первой строки текста. Для этого предназначено свойство <font  color="#DF9E62" ><i><b>text-indent</b></i></font>. Давайте с его помощью сделаем красную строку для абзацев:
+
+<div class="toolbar3" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>длинный текст...</li>
+<li>/p</li>
+<li>p</li>
+   <li>длинный текст...</li>
+<li>/p</li>
+<li>p</li>
+   <li>длинный текст...</li>
+<li>/p</li>
+<li>CSS</li>
+<li>p {</li>
+  <li> text-indent: 50px;</li>
+   <li>text-align: justify;</li>
+   <li>width: 400px;</li>
+<li>}</li>
+</font>
+</div>
+
+<p>Результат выполнения кода:</p>
+<font  color="#DF9E62" >
+<p text-indent="50px" text-align="justify" width="400px">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. 
+Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+<p text-indent="50px" text-align="justify" width="400px">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+<p text-indent="50px" text-align="justify" width="400px">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir.
+</p>
+</font>
+</font>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Эффекты текста на CSS</h2></font>
+<font face="Tahoma" color="white">Свойство <font  color="#DF9E62" ><i><b>text-decoration</b></i></font> позволяет задавать некоторые эффекты для текста: подчеркивание, перечеркивание, линию сверху, а также отменять такие эффекты, если какой-либо тег имеет их по умолчанию. Чаще всего это свойство используются для отмены подчеркивания ссылок (они по умолчанию подчеркнуты).
+
+<p>Давайте посмотрим, какие значения может принимать свойство <font  color="#DF9E62" ><i><b>text-decoration</b></i></font>.</p>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение underline</h2></font>
+<p>Значение <font  color="#DF9E62" ><i><b>underline</b></i></font> добавляет подчеркивание тексту:</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>Lorem ipsum dolor sit amet.</li>
+<li>/p</li>
+<li>CSS</li>
+<li>p {</li>
+  <li> text-decoration: underline;</li>
+<li>}</li>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение overline</h2></font>
+<p>Значение <font  color="#DF9E62" ><i><b>overline</b></i></font>  добавляет линию над текстом:</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>Lorem ipsum dolor sit amet.</li>
+<li>/p</li>
+<li>CSS</li>
+<li>p {</li>
+   <li>text-decoration: overline;</li>
+<li>}</li>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение line-through</h2></font>
+<p>Значение <font  color="#DF9E62" ><i><b>line-through</b></i></font> добавляет линию, перечеркивающую текст:</p>
+
+<div class="toolbar5" align="left" >
+<font  color="#DF9E62" >
+<li>p</li>
+   <li>Lorem ipsum dolor sit amet.</li>
+<li>/p</li>
+<li>CSS</li>
+<li>p {</li>
+  <li> text-decoration: line-through;</li>
+<li>}</li>
+</font>
+</div>
+
+<font face="Tahoma" color="white"><h2><font  color="#90209D" >Значение none</h2></font>
+<p>Значение <font  color="#DF9E62" ><i><b>none</b></i></font> отменяет все эффекты. Обычно используется для отмены подчеркивания ссылок.</p>
+
+<p>Смотрите пример:</p>
+
+<div class="toolbar2" align="left" >
+<font  color="#DF9E62" >
+<li>a href="">ссылка /a</li>
+<li>CSS</li>
+<li>a {</li>
+   <li>text-decoration: none;</li>
+<li>}</li>
+</font>
+</div>
+</font>
+<div>
+    <ul id="navbar2">
+   <li><a href="..\Courses.html"><span><button class="btn first">Закончить модуль</button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+</body>
+</div>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo1.png" />
+<div class="conthtml" id="conthtml">
+<div id=bg>
+     <head>
+     <!--====== USEFULL META ======-->
+      <meta charset="utf-8">
+     <!--====== TITLE TAG ======-->
+      <title>web-programming</title>
+     <!--====== LOGO ICON =======-->
+      <link rel="shortcut icon" type="image/ico" href="..\assets\img\logo.png" />
+     <!--====== MAIN CONNECTION ======-->
+      <link href="..\corecff.css" >
+      <link href="..\assets\css_content\concss.css" rel="stylesheet">
+	  <link href="..\assets\css_content\css_for_Course.css" rel="stylesheet">
+     <!--====== сconnect js ======-->
+</head>
+
+<body background="..\assets\img\background.gif" align="center">
+ 
+   <!--logo-->
+    <div id="logo" align="left">
+     <a href="index.html" >
+     <img href="index.html" src="..\assets\img\site_logo.png" alt="logo"></a>
+    </div>
+    <!--menu-->
+    <ul id="navbar">
+   <li><a href="..\index.html" ><span><button class="btn first">Home</button></span></a></li>
+   <li><a href="..\Courses.html"><span><button class="btn first">Courses</button></span></a></li>
+   <li><a href="..\Contact.html"><span><button class="btn first">Contact</button></span></a></li>
+   <li><a href="..\FAQ.html"><span><button class="btn first">FAQ</button></span></a></li>
+   </ul>
+   <a href="#" class="back_to_top"></a>
+	<font face="Tahoma" color="white"><h2><font  color="#90209D" >Скругленные уголки на CSS</h2></font>
+	<font face="Tahoma" color="white"><p>Сейчас мы с вами научимся скруглять уголки у границ и фона. Для этого следует применять свойство border-radius, принимающее значение в пикселях.
+Что означает то, что мы указали скругление, к примеру, в 10px? Это радиус круга, который можно вписать в это скругление. Если у вас нелады с математикой и вам не понятно последнее предложение - забудьте о нем и просто подбирайте скругление на глаз. При некотором опыте это сделать не проблема (измерительного инструмента для измерения скруглений не существует, по крайней мере я о таком не слышал).
+Давайте скруглим уголки блоку, задав ему скругление в 10px:</p></font>
+
+<div class="toolbar7" align="left" >
+<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 300px;</li>
+	<li> height: 100px;</li>
+	<li> border: 1px solid red;</li>
+	<li> border-radius: 10px</li>
+	<li> }</li>
+	</font>
+</div>
+
+	
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_1"></div>
+
+
+	<font face="Tahoma" color="white"><h2><font  color="#90209D" >Скругление фона</h2></font>
+	<font face="Tahoma" color="white"><p>Наше свойство скругляет не только уголки не границы, но и фона:</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS: </p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> border-radius: 20px;</li>
+	<li> width: 300px;</li>
+	<li> height: 100px;</li>
+	<li> background-color: #e4f1ed;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_2"></div>
+
+	<font face="Tahoma" color="white"><h2><font  color="#90209D" >Делаем круг</h2></font>
+	<font face="Tahoma" color="white"><p>Сругление в половину ширины и высоты сделает круг:</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS: </p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 100px;</li>
+	<li> height: 100px;</li>
+	<li> border-radius: 50px;</li>
+	<li> border: 1px solid red;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_3"></div>
+
+
+	<font face="Tahoma" color="white"><h2><font  color="#90209D" >Разные скругления для разных углов CSS</h2></font>
+	<font face="Tahoma" color="white"><p>Свойство border-radius может принимать не только одно значение, но и два, три или четыре. Каждое значение будет задавать скругление для своего угла. Давайте посмотрим более подробно.</p></font>
+	<font face="Tahoma" color="white"><h3><font  color="#90209D" >4 значения</h3></font>
+	<font face="Tahoma" color="white"><p>Если задано четыре значения, то первое значение задает скругление для верхнего левого угла, второе - для верхнего правого, третье - для нижнего правого угла, а четвертое - для нижнего левого угла:</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 300px;</li>
+	<li> height: 100px;</li>
+	<li> border: 1px solid red</li>
+	<li> border-radius: 10px 20px 30px 40px;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_4"></div>
+
+
+	<font face="Tahoma" color="white"><h3><font  color="#90209D" >2 значения</h3></font>
+	<font face="Tahoma" color="white"><p>Если задано два значения, то первое значение задает скругление для верхнего правого и нижнего левого углов, второе - для верхнего левого и нижнего правого:</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 300px;</li>
+	<li> height: 100px;</li>
+	<li> border: 1px solid red</li>
+	<li> border-radius: 10px 40px;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_5"></div>
+
+
+	<font face="Tahoma" color="white"><h3><font  color="#90209D" >2 значения</h3></font>
+	<font face="Tahoma" color="white"><p>Если задано три значения, то первое значение задает скругление для верхнего левого угла, второе - одновременно для верхнего правого и нижнего левого, а третье - для нижнего правого угла.</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 300px;</li>
+	<li> height: 100px;</li>
+	<li> border: 1px solid red</li>
+	<li> border-radius: 10px 20px 30px;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_6"></div>
+
+
+	<font face="Tahoma" color="white"><h2><font  color="#90209D" >Скругленные уголки в процентах на CSS</h2></font>
+	<font face="Tahoma" color="white"><p>Можно задавать скругление в процентах::</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 200px;</li>
+	<li> height: 200px;</li>
+	<li> border: 1px solid red</li>
+	<li> border-radius: 10%;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_7"></div>
+
+
+	<font face="Tahoma" color="white"><h3><font  color="#90209D" >Делаем круг</h3></font>
+	<font face="Tahoma" color="white"><p>Для того, чтобы получился круг, можно задать скругление в 50%:</p></font>
+
+
+<div class="toolbar7" align="left" >
+	<font  color="#DF9E62"  >
+	<li> div id="elem" /div</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>CSS:</p></font>
+
+
+<div class="toolbar5" align="left" >
+	<font  color="#DF9E62"  >
+	<li> #elem {</li>
+	<li> width: 200px;</li>
+	<li> height: 200px;</li>
+	<li> border: 1px solid red</li>
+	<li> border-radius: 50%;</li>
+	<li> }</li>
+	</font>
+</div>
+
+
+	<font face="Tahoma" color="white"><p>Результат выполнения кода:</p></font>
+	<div id="course3_4_8"></div>
+
+
+
+
+
+<div>
+    <ul id="navbar1">
+   <li><a href="..\reposCouses\3_3yrok.html" ><span><button class="btn first"><-предыдущий урок</button></span></a></li>
+   <li><a href="..\reposCouses\3_5yrok.html"><span><button class="btn first">Слудующий урок -></button></span></a></li>
+   </ul>
+</div>
+
+ <!--====== сconnect js ======-->
+ <script src="..\assets\js\jquery-2.2.4.min.js"></script>
+<script src="..\assets\js\back.js"></script>
+
+</body>
+</div>
+</html>
