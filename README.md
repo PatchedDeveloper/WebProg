@@ -1,2 +1,14 @@
-# WebProg
-One of my projects written from scratch, languages used: js, css, html.
+# Webprog by @kiddingtrust
+___
+the site is written from scratch, languages are used:
+- :two_hearts: JavaScript
+- :two_hearts: css
+- :two_hearts: html
+___
+
+## Main functions
+- Learning modules
+- feedback using javascript widget
+- scroll script
+
+### ***You can see the rest by downloading the repository***
