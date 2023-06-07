@@ -1,4 +1,4 @@
-# Webprog by @kiddingtrust
+# Webprog by @PatchedDev
 ___
 the site is written from scratch, languages are used:
 - :two_hearts: JavaScript
